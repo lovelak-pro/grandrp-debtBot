@@ -24,7 +24,7 @@ Debt-Collector Bot is a desktop automation tool with a simple webview interface,
 
 1. **Clone the repository:**
 	```sh
-	git clone https://github.com/yourusername/grandrp-debtBot.git
+	git clone https://github.com/lovelak-pro/grandrp-debtBot.git
 	cd grandrp-debtBot
 	```
 2. **Install dependencies:**
