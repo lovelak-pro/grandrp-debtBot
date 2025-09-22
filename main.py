@@ -31,5 +31,5 @@ class APP:
 
 if __name__ == "__main__":
     api = APP()
-    ui.create_window('Debt-Collector Bot','src/index.html',js_api=api,width=400,height=220,resizable=False)
+    ui.create_window('Debt-Collector Bot v1.1','src/index.html',js_api=api,width=400,height=220,resizable=False)
     ui.start()
