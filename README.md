@@ -12,7 +12,7 @@ Debt-Collector Bot is a desktop automation tool with a simple webview interface,
 
 # Preview
 
-![image](src/preview-v1.1.png)
+![image](src/preview_v1.1.png)
 
 ## How It Works
 
