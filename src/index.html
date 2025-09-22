@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Debt-Collector Bot v1.1</title>
     <style>
-        *{
-    padding: 0%;
-    margin: 0%;
-}
-body{
-    text-align: center;
-    height: 170px;
-    background: linear-gradient(135deg,rgb(210, 58, 248),rgb(184, 138, 184));
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-p,button,h2{
-    margin-top: 10px;
-}
-button{
-    width: 150px;
-    height: 30px;
-    border-radius: 6px;
-    box-shadow: 0 0 5px black inset;
-    background-color: transparent;
-    border: none;
-    color: rgba(0, 0, 0, 0.7);
-    transition: 0.3s ease-in-out;
-}
-button:focus{
-    outline: none;
-}
-button:hover {
-    scale: 1.03;
-}
-p{
-    font-weight: 600;
-}
-#warn{
-    color: red;
-    position: absolute;
-    width: fit-content;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-a{
-    color: black;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5px;
-}
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      body {
+        text-align: center;
+        height: 170px;
+        background: linear-gradient(
+          135deg,
+          rgb(210, 58, 248),
+          rgb(184, 138, 184)
+        );
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p,
+      button,
+      h2 {
+        margin-top: 10px;
+      }
+      button {
+        width: 150px;
+        height: 30px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px black inset;
+        background-color: transparent;
+        border: none;
+        color: rgba(0, 0, 0, 0.7);
+        transition: 0.3s ease-in-out;
+      }
+      button:focus {
+        outline: none;
+      }
+      button:hover {
+        scale: 1.03;
+      }
+      p {
+        font-weight: 600;
+      }
+      #warn {
+        color: red;
+        position: absolute;
+        width: fit-content;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      a {
+        color: black;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Debt-Collector Bot v1.1</h2>
     <button id="start" onclick="StartBot()">Start Bot</button>
     <button id="stopBot" onclick="StopBot()">Stop Bot</button>
@@ -62,35 +68,35 @@ a{
     <p>Status : <span id="status"></span></p>
     <p id="warn"></p>
     <a href="https://lovelak.rf.gd" target="_blank">Made By Lovelak</a>
-</body>
-<script>
-    const status = document.getElementById('status');
-    const warning = document.getElementById('warn');
-    status.innerHTML = 'OFF';
-    status.style.color = 'red';
-    function StartBot(){
-        if(status.innerHTML === 'OFF'){
-        window.pywebview.api.start()
-        status.innerHTML = 'ON';
-        status.style.color = 'green';
-        }else{
-            warning.innerHTML = 'ALERT : Already Running!';
-            setTimeout(() =>{
-                warning.innerHTML = '';
-            },2000);
-        }
+  </body>
+  <script>
+    const status = document.getElementById("status");
+    const warning = document.getElementById("warn");
+    status.innerHTML = "OFF";
+    status.style.color = "red";
+    function StartBot() {
+      if (status.innerHTML === "OFF") {
+        window.pywebview.api.start();
+        status.innerHTML = "ON";
+        status.style.color = "green";
+      } else {
+        warning.innerHTML = "ALERT : Already Running!";
+        setTimeout(() => {
+          warning.innerHTML = "";
+        }, 2000);
+      }
     }
-    function StopBot(){
-        if(status.innerHTML === 'ON'){
-        window.pywebview.api.stop()
-        status.innerHTML = 'OFF';
-        status.style.color = 'red';
-        }else{
-            warning.innerHTML = 'ALERT : Already Stopped!';
-            setTimeout(() =>{
-                warning.innerHTML = '';
-            },2000);
-        }
+    function StopBot() {
+      if (status.innerHTML === "ON") {
+        window.pywebview.api.stop();
+        status.innerHTML = "OFF";
+        status.style.color = "red";
+      } else {
+        warning.innerHTML = "ALERT : Already Stopped!";
+        setTimeout(() => {
+          warning.innerHTML = "";
+        }, 2000);
+      }
     }
-</script>
-</html> 
+  </script>
+</html>
