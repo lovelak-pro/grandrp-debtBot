@@ -12,29 +12,30 @@ Debt-Collector Bot is a desktop automation tool with a simple webview interface,
 
 # Preview
 
-![image](src/preview.png)
+![image](src/preview-v1.1.png)
+
 ## How It Works
 
 1. Launch the app.
 2. Click **Start Bot** in the window.
-3. Go to your target  and press **X** to collect Debt.
+3. Go to your target and press **X** to collect Debt.
 4. Click **Stop Bot** to stop automation.
 
 ## Installation
 
 1. **Clone the repository:**
-	```sh
-	git clone https://github.com/lovelak-pro/grandrp-debtBot.git
-	cd grandrp-debtBot
-	```
+   ```sh
+   git clone https://github.com/lovelak-pro/grandrp-debtBot.git
+   cd grandrp-debtBot
+   ```
 2. **Install dependencies:**
-	```sh
-	pip install pywebview pyautogui keyboard pyttsx3
-	```
+   ```sh
+   pip install pywebview pyautogui keyboard pyttsx3
+   ```
 3. **Run the bot:**
-	```sh
-	python main.py
-	```
+   ```sh
+   python main.py
+   ```
 
 ## Requirements
 
@@ -56,5 +57,5 @@ Debt-Collector Bot is a desktop automation tool with a simple webview interface,
 ### Made by [Lovelak](https://lovelak.rf.gd)
 
 ---
-**Disclaimer:** Use responsibly. Anything happens to your **Grand RP** Account is on you this bot is only for educational purposes.
 
+**Disclaimer:** Use responsibly. Anything happens to your **Grand RP** Account is on you this bot is only for educational purposes.
