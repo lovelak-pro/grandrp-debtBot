@@ -1,6 +1,6 @@
-# Debt-Collector Bot
+# Debt-Collector Bot v1.1
 
-Debt-Collector Bot is a desktop automation tool with a simple webview interface, designed to automate keypress sequences for debt collection tasks in **Grand RP**. The bot listens for the `X` key and simulates a series of keypresses (`g`, `3`, `4`, `8`) The UI is built with HTML/CSS and integrated into a Python app using [pywebview](https://pywebview.flowrl.com/).
+Debt-Collector Bot is a desktop automation tool with a simple webview interface, designed to automate keypress sequences for debt collector Job in **Grand RP**. The bot listens for the `X` key and simulates a series of keypresses (`g`, `3`, `4`, `8`) The UI is built with HTML/CSS and integrated into a Python app using [pywebview](https://pywebview.flowrl.com/).
 
 ## Features
 
@@ -53,8 +53,8 @@ Debt-Collector Bot is a desktop automation tool with a simple webview interface,
 
 ## Credits
 
-Made by [Lovelak](https://lovelak.rf.gd)
+### Made by [Lovelak](https://lovelak.rf.gd)
 
 ---
-**Disclaimer:** Use responsibly. Anything happens to your is on you this bot is only for educational purpses.
+**Disclaimer:** Use responsibly. Anything happens to your **Grand RP** Account is on you this bot is only for educational purposes.
 
