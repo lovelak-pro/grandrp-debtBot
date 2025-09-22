@@ -23,7 +23,7 @@ class APP:
 
     def stop(self):
         self.is_running = False
-        while True:
+        while self.is_running == False:
             sleep(0.05)
             if kb.is_pressed('x') and self.is_running == False:
                 speak('Start the collector bot first')
