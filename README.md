@@ -1,4 +1,4 @@
-# Debt-Collector Bot v1.1
+# Debt-Collector Bot v1.2
 
 Debt-Collector Bot is a desktop automation tool with a simple webview interface, designed to automate keypress sequences for debt collector Job in **Grand RP**. The bot listens for the `X` key and simulates a series of keypresses (`g`, `3`, `4`, `8`) The UI is built with HTML/CSS and integrated into a Python app using [pywebview](https://pywebview.flowrl.com/).
 
@@ -9,17 +9,19 @@ Debt-Collector Bot is a desktop automation tool with a simple webview interface,
 - **Status Display**: Visual feedback for bot status (ON/OFF).
 - **Voice Warning**: If you try to stop the bot when it's not running, you'll hear a spoken warning.
 - **Customizable UI**: Stylish, responsive design with helpful hints.
+- **Adjusable Speed**: Now you can set your interaction speed ether faster or slower.
 
 # Preview
 
-![image](src/preview_v1.1.png)
+![image](src/preview_v1.2.png)
 
-## How It Works
+## How It Use?
 
 1. Launch the app.
-2. Click **Start Bot** in the window.
-3. Go to your target and press **X** to collect Debt.
-4. Click **Stop Bot** to stop automation.
+2. Set the Speed of your choice.
+3. Click **Start Bot** in the window.
+4. Go to your target and press **`X`** to collect Debt.
+5. Click **Stop Bot** to stop automation.
 
 ## Installation
 

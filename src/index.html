@@ -12,11 +12,7 @@
       body {
         text-align: center;
         height: 170px;
-        background: linear-gradient(
-          135deg,
-          rgb(210, 58, 248),
-          rgb(184, 138, 184)
-        );
+        background:  rgb(184, 138, 184);
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
       p,
@@ -40,14 +36,19 @@
       button:hover {
         scale: 1.03;
       }
+      #speed{
+        margin-top: 10px;
+      }
       p {
+        margin: 0%;
+        text-decoration: underline;
         font-weight: 600;
       }
       #warn {
         color: red;
         position: absolute;
         width: fit-content;
-        bottom: 20px;
+        bottom: 32px;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -61,9 +62,20 @@
     </style>
   </head>
   <body>
-    <h2>Debt-Collector Bot v1.1</h2>
+    <h2>Debt-Collector Bot v1.2</h2>
     <button id="start" onclick="StartBot()">Start Bot</button>
     <button id="stopBot" onclick="StopBot()">Stop Bot</button>
+    <br>
+    <input
+        type="range"
+        name=""
+        id="speed"
+        min="3"
+        max="7"
+        autocomplete="off"
+      />
+      <br>
+      <p id="note"></p>
     <p class="hint">HINT : Just go to target and press "X" Easy!</p>
     <p>Status : <span id="status"></span></p>
     <p id="warn"></p>
@@ -72,14 +84,25 @@
   <script>
     const status = document.getElementById("status");
     const warning = document.getElementById("warn");
+    const speed = document.getElementById("speed");
+    const note = document.getElementById("note");
+
+
+      note.style.color = 'cyan';
+     note.textContent = "Speed : 0." + speed.value + "0s";
+    speed.addEventListener("input", () => {
+      note.textContent = "Speed : 0." + speed.value + "0s";
+    });
     status.innerHTML = "OFF";
     status.style.color = "red";
     function StartBot() {
+      const Speed = parseInt(speed.value);
       if (status.innerHTML === "OFF") {
-        window.pywebview.api.start();
+        window.pywebview.api.start(Speed);
         status.innerHTML = "ON";
-        status.style.color = "green";
+        status.style.color = "lightgreen";
       } else {
+        warning.style.color = "lightgreen";
         warning.innerHTML = "ALERT : Already Running!";
         setTimeout(() => {
           warning.innerHTML = "";
@@ -92,6 +115,7 @@
         status.innerHTML = "OFF";
         status.style.color = "red";
       } else {
+        warning.style.color = "red";
         warning.innerHTML = "ALERT : Already Stopped!";
         setTimeout(() => {
           warning.innerHTML = "";
